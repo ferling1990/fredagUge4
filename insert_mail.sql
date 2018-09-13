@@ -4,25 +4,26 @@
 --            by R. Sunderraman
 ---------------------------------------------------------------
 
-DELETE FROM `employees` WHERE 1;
-DELETE FROM `parts` WHERE 1;
-DELETE FROM `customers` WHERE 1;
-DELETE FROM `orders` WHERE 1;
-DELETE FROM `odetails` WHERE 1;
-DELETE FROM `zipcodes` WHERE 1;
 
-#insert into  zipcodes values
- # (67226,'Wichita');
-#insert into  zipcodes values
-#  (60606,'Fort Dodge');
-#insert into  zipcodes values
-#  (50302,'Kansas City');
-#insert into  zipcodes values
- # (54444,'Columbia');
-#insert into  zipcodes values
-#  (66002,'Liberal');
-#insert into  zipcodes values
-#  (61111,'Fort Hays');
+#DELETE FROM `employees` WHERE 1;
+#DELETE FROM `parts` WHERE 1;
+#DELETE FROM `customers` WHERE 1;
+#DELETE FROM `orders` WHERE 1;
+#DELETE FROM `odetails` WHERE 1;
+#DELETE FROM `zipcodes` WHERE 1;
+
+insert into  zipcodes values
+ (67226,'Wichita');
+insert into  zipcodes values
+  (60606,'Fort Dodge');
+insert into  zipcodes values
+  (50302,'Kansas City');
+insert into  zipcodes values
+ (54444,'Columbia');
+insert into  zipcodes values
+  (66002,'Liberal');
+insert into  zipcodes values
+  (61111,'Fort Hays');
 
 insert into employees values
   (1000,'Jones',67226,'1995-12-12');
@@ -68,23 +69,23 @@ insert into orders values
   insert into orders values
   (1025,3333,1002,'1995-02-13','1995-02-20');
 
-#insert into odetails values
-#  (1020,10506,1);
-#insert into odetails values
-#  (1020,10507,1);
-#insert into odetails values
-#  (1020,10508,2);
-#insert into odetails values
-#  (1020,10509,3);
-#insert into odetails values
-#  (1021,10601,4);
-#insert into odetails values
-#  (1022,10601,1);
-#insert into odetails values
-#  (1022,10701,1);
-#insert into odetails values
-#  (1023,10800,1);
-#insert into odetails values
-#  (1023,10900,1);
+insert into odetails values
+  (1020,10506,1);
+insert into odetails values
+  (1020,10507,1);
+insert into odetails values
+  (1020,10508,2);
+insert into odetails values
+  (1020,10509,3);
+insert into odetails values
+  (1021,10601,4);
+insert into odetails values
+  (1022,10601,1);
+insert into odetails values
+  (1022,10701,1);
+insert into odetails values
+  (1023,10800,1);
+insert into odetails values
+  (1023,10900,1);
 
 commit;
