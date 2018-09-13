@@ -1,5 +1,6 @@
 # Opgave 4 part 3
-
+# Statements skal skives i rækkefølge således at data der har foreign keys der peger på sig,
+# oprettes først.
 use mydb;
 
 insert into  zipcodes values
