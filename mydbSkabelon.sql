@@ -114,7 +114,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`odetails` (
   CONSTRAINT `fk_odetails_orders1`
     FOREIGN KEY (`ono`)
     REFERENCES `mydb`.`orders` (`ono`)
-    ON DELETE NO ACTION
+    ON DELETE CASCADE
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_odetails_parts1`
     FOREIGN KEY (`pno`)
