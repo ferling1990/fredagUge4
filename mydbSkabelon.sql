@@ -1,5 +1,5 @@
 -- MySQL Workbench Forward Engineering
-
+DROP database if exists mydb;
 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
@@ -69,8 +69,8 @@ CREATE TABLE IF NOT EXISTS `mydb`.`orders` (
   `ono` INT(11) NOT NULL,
   `cno` INT(11) NOT NULL,
   `eno` INT(11) NOT NULL,
-  `recieved` DATETIME NOT NULL,
-  `shipped` DATETIME NOT NULL,
+  `shipped` DATETIME default null,
+  `recieved` DATETIME default null,
   PRIMARY KEY (`ono`, `cno`, `eno`),
   INDEX `fk_orders_customers1_idx` (`cno` ASC),
   INDEX `fk_orders_employees1_idx` (`eno` ASC),
